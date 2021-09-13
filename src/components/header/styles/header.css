@@ -1,0 +1,20 @@
+.header {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+  z-index: 999;
+
+  padding: 30px 50px;
+
+  background: #7ed321;
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    padding: 20px 20px;
+  }
+}

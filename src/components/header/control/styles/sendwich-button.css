@@ -1,0 +1,156 @@
+.header__control__sendwich-button {
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+.header__control__sendwich-button span {
+  position: absolute;
+  left: 9px;
+
+  width: 30px;
+  height: 3px;
+
+  background: #fff;
+}
+
+.header__control__sendwich-button.active span:first-child {
+  /* animation: top-close 1s;
+  animation-fill-mode:forwards; */
+  top: 22.5px;
+  transform: rotate(45deg);
+  background: #b0abab
+}
+
+.header__control__sendwich-button.active span:nth-child(2) {
+  /* animation: mid-close 1s;
+  animation-fill-mode:forwards; */
+  top: 22.5px;
+  transform: rotate(45deg);
+  background: #b0abab
+}
+
+.header__control__sendwich-button.active span:last-child {
+  /* animation: bottom-close 1s;
+  animation-fill-mode:forwards; */
+  top: 22.5px;
+  transform: rotate(-45deg);
+  background: #b0abab
+}
+
+.header__control__sendwich-button.inactive span:first-child {
+  top: 12.5px;
+  /* animation: top-open 1s;
+  animation-fill-mode:forwards; */
+}
+
+.header__control__sendwich-button.inactive span:nth-child(2) {
+  top: 22.5px;
+  /* animation: mid-open 1s;
+  animation-fill-mode:forwards; */
+}
+
+.header__control__sendwich-button.inactive span:last-child {
+  top: 32.5px;
+  /* animation: bottom-open 1s;
+  animation-fill-mode:forwards */
+}
+
+/* @keyframes top-open {
+  0% {
+    top: 12.5px;
+  }
+
+  50% {
+    top: 22.5px;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top: 22.5px;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes mid-open {
+  0% {
+    top: 22.5px;
+  }
+
+  50% {
+    top: 22.5px;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top: 22.5px;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes bottom-open {
+  0% {
+    top: 32.5px;
+  }
+
+  50% {
+    top: 22.5px;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top: 22.5px;
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes top-close {
+  0% {
+    top: 22.5px;
+    transform: rotate(45deg);
+  }
+
+  50% {
+    top: 22.5px;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top: 12.5px;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes mid-close {
+  0% {
+    top: 22.5px;
+    transform: rotate(45deg);
+  }
+
+  50% {
+    top: 22.5px;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top: 22.5px;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bottom-close {
+  0% {
+    top: 22.5px;
+    transform: rotate(-45deg);
+  }
+
+  50% {
+    top: 22.5px;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top: 32.5px;
+    transform: rotate(0deg);
+  }
+} */

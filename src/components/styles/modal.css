@@ -1,0 +1,130 @@
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  background: #7ed321;
+  border-radius: 44px;
+  padding: 80px 120px;
+}
+
+.modal div{
+  display: flex;
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+.modal div span{
+  flex-basis: 30%;
+  margin-right: 20px;
+  padding: 4px;
+}
+
+.modal div input{
+  flex-basis: 70%;
+  border-radius: 7px;
+}
+
+.modal .save-btn{
+  background: none;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 36px;
+  padding: 10px 40px;
+  cursor: pointer;
+  margin-top: 35px;
+}
+
+.modal .close-btn {
+  position: absolute;
+  top: 35px;
+  right: 55px;
+
+  border: none;
+  background: none;
+
+  cursor: pointer;
+}
+
+.modal .close-btn span {
+  position: absolute;
+
+  width: 35px;
+  height: 4px;
+  background: #fff;
+}
+
+.modal .close-btn span:first-child {
+  transform: rotate(45deg);
+}
+
+.modal .close-btn span:last-child {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 700px) {
+  .modal {
+    padding: 80px 30px;
+    margin-top: 100px;
+  }
+
+  .modal div{
+    flex-direction: column;
+  }
+
+  .modal div span{
+    flex-basis: 100%;
+    margin-right: 0;
+    padding: 4px;
+  }
+  
+  .modal div input{
+    flex-basis: 100%;
+    border-radius: 7px;
+    padding: 5px;
+  }
+
+  .modal .close-btn {
+    top: 35px;
+    right: 45px;
+  }
+  
+  .modal .close-btn span {
+    width: 25px;
+    height: 3px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .modal {
+    width: 100%;
+    border-radius: 0;
+    padding: 80px 30px;
+  }
+  
+  .modal div{
+    width: 100%;;
+  }
+
+  .modal .close-btn {
+    top: 25px;
+    right: 35px;
+  }
+  
+}
