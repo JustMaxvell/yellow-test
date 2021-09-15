@@ -1,0 +1,48 @@
+.jogs {
+  width: 100%;
+  height: calc(100% - 120px);
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.jogs__empty {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.jogs__empty img{
+  margin-bottom: 50px;
+}
+
+.jogs__empty button{
+  background: none;
+  color: #e990f9;
+  border: 3px solid #e990f9;
+  border-radius: 36px;
+  padding: 15px 40px;
+  cursor: pointer;
+  margin-top: 80px;
+}
+
+.jogs__list {
+  position: relative;
+  
+  padding: 100px 0;
+}
+
+@media screen and (max-width: 700px) {
+  .jogs {
+    height: calc(100% - 96px);
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .jogs__list {
+    padding: 70px 0;
+  }
+}
+

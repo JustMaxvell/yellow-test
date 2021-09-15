@@ -1,0 +1,51 @@
+.jogs__list__jog {
+  display: flex;
+  padding: 0 40px;
+
+  position: relative;
+
+  margin-bottom: 50px;
+}
+
+.jogs__list__jog:hover .delete-button {
+  display: block;
+}
+
+.jogs__list__jog__info {
+  display: flex;
+  flex-direction: column;
+  margin-left : 70px;
+}
+
+.jogs__list__jog__info__item {
+  padding: 3px 0;
+}
+
+@media screen and (max-width: 475px) {
+  .jogs__list {
+    width: 100%;
+  }
+
+  .jogs__list__jog {
+    width: 100%;
+    padding: 20px 40px;
+    border-bottom: 1px solid #b0abab;
+    margin-bottom: 0;
+  }
+
+  .jogs__list__jog__info {
+    margin-left: 40px;
+  }
+
+  .jogs__list__jog__info__item {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .jogs__list__jog {
+    padding: 20px 20px;
+  }
+}

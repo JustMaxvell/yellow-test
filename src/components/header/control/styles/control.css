@@ -1,0 +1,45 @@
+.header__control {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.header__control__menu ul{
+  display: flex;
+}
+
+.header__control__menu__item {
+  padding: 5px 0;
+  cursor: pointer;
+  color: #fff;
+  margin: 20px;
+}
+
+.header__control__filter {
+  margin: 0 20px;
+  align-self: center;
+}
+
+.header__control__menu__item.active {
+  border-bottom: 3px solid #fff;
+}
+
+@media screen and (min-width: 700px) {
+  .header__control__sendwich-button {
+    display: none;
+  }
+
+  .header__control__menu {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header__control__sendwich-button {
+    display: block;
+  }
+
+  .header__control__menu {
+    display: none;
+  }
+}

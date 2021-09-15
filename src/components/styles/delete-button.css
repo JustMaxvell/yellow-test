@@ -1,0 +1,30 @@
+.delete-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  width: 20px;
+  height: 20px;
+
+  display: none;
+  cursor:pointer;
+}
+
+.delete-button span {
+  position: absolute;
+  top: 9px;
+  left: 2px; 
+
+  width: 16px;
+  height: 2px;
+
+  background: crimson;
+}
+
+.delete-button span:first-child {
+  transform: rotate(45deg);
+}
+
+.delete-button span:last-child {
+  transform: rotate(-45deg);
+}
