@@ -8,10 +8,17 @@ import { DeleteButton } from "../components/DeleteButton"
 // ? Styles
 import "./styles/jog.css"
 
-export const Jog = ({item, setJog}) => {
+export const Jog = ({item, userId, getJogs, token}) => {
 
-  const deleteJog = (id) => {
-    setJog(prev => [...prev.filter(jog => jog.id !== id)])
+  const deleteJog = async (userId, id) => {
+    await fetch(`https://jogtracker.herokuapp.com/api/v1/data/jog?jog_id=${id}&user_id=${userId}`, {
+      headers: {
+        Accept: "application/json",
+        Authorization: `Bearer ${token}`
+      },
+      method: "DELETE"
+    });
+    getJogs();
   }
 
   const speedCalculate = (distance = 0, time = 1) => {
@@ -20,7 +27,7 @@ export const Jog = ({item, setJog}) => {
 
   return (
     <div className="jogs__list__jog">
-      <DeleteButton id={item.id} deleteJog={deleteJog}/>
+      <DeleteButton id={item.id} userId={userId} deleteJog={deleteJog}/>
       <img src={icon} alt="icon" />
       <div className="jogs__list__jog__info">
         <div className="jogs__list__jog__info__item">

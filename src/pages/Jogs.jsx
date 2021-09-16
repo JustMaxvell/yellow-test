@@ -10,7 +10,7 @@ import icon from "../assets/images/sad-rounded-square-emoticon.svg";
 // ? Styles
 import "./styles/jogs.css";
 
-export const Jogs = ({jogs, filter, token, getJogs}) => {
+export const Jogs = ({jogs, filter, token, getJogs, userId}) => {
 const [isModalOpen, toggleModal] = useState(false);
 
 const filterJogs = (jogs, filter) => {
@@ -37,7 +37,7 @@ const filterJogs = (jogs, filter) => {
         </>
         :
         <section className="jogs__list">
-          {filterJogs(jogs, filter).map( (item, index) => <Jog item={item} key={index}/>)}
+          {filterJogs(jogs, filter).map( (item, index) => <Jog item={item} key={index} userId={userId} getJogs={getJogs} token={token}/>)}
           <AddButton toggleModal={toggleModal}/>
         </section>
       }

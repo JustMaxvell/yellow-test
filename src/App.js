@@ -69,7 +69,7 @@ function App() {
             </Route>
 
             <Route path="/jogs">
-              <Jogs jogs={jogs} filter={filter} token={token} getJogs={getJogs}/>
+              <Jogs jogs={jogs} filter={filter} token={token} getJogs={getJogs} userId={JSON.parse(user).id}/>
             </Route>
 
             <Route path="/info">
